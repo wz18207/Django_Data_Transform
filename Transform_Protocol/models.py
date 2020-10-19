@@ -6,12 +6,17 @@ from django.db.models.base import Model
 1.id
 2.device
 3.timestamp
-4. air temp
-5. soil temp
-6. humidity
-7. Co2
 '''
-class Sensor(models.Model):
+
+'''
+//For the trans data.
+1. air temp
+2. soil temp
+3. humidity  (soil)
+4. Co2
+5. light
+'''
+class Recv_Sensor(models.Model):
 
     #id=models.AutoField(primary_key=True)
     #device=models.CharField(max_length=25)
